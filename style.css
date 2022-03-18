@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+.wrapper {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  align-items: center;
+  justify-content: center;
+}
+
+.start-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-home {
+  color: rgb(48, 48, 48);
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+}
+
+.start-button {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.main-game {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.genius {
+  display: grid;
+  grid-template-areas: "verde vermelho" "amarelo azul";
+  grid-gap: 10px;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  width: 700px;
+  height: 700px;
+}
+
+.blue {
+  grid-area: azul;
+  background-color: blue;
+  border-bottom-right-radius: 100%;
+}
+
+.red {
+  grid-area: vermelho;
+  background-color: red;
+  border-top-right-radius: 100%;
+}
+
+.yellow {
+  grid-area: amarelo;
+  background-color: yellow;
+  border-bottom-left-radius: 100%;
+}
+
+.green {
+  grid-area: verde;
+  background-color: green;
+  border-top-left-radius: 100%;
+}
+
+.selected {
+  opacity: 0.4;
+}
